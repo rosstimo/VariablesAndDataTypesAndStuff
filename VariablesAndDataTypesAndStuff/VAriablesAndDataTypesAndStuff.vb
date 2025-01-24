@@ -10,6 +10,8 @@ Module VariablesAndDataTypesAndStuff
         Dim laffyTaffy As Integer
         Dim money As Decimal
         Dim studentName As String
+        Dim userInput As String
+
 
         Console.WriteLine(jellyBeans)
 
@@ -32,7 +34,11 @@ Module VariablesAndDataTypesAndStuff
         jellyBeans = CInt(studentName)
 
 
-        Console.WriteLine()
+        Console.WriteLine("Please enter a fruit")
+        userInput = Console.ReadLine()
+
+        'Console.WriteLine("You entered: " & userInput & "!")
+        Console.WriteLine($"You Entered {userInput}!")
 
     End Sub
 
